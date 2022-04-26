@@ -13,10 +13,11 @@
 #home{
     width: 100vw;
     height: 100%;
-    background-image: url('../background/compressed/Home.jpg');
+    background-image: url('../Images/Background/Home.webp');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    object-fit: fill;
 }
 nav{
     width: 100%;
@@ -24,6 +25,7 @@ nav{
     display: flex;
     justify-content: space-between;
     background-color: rgba(0, 0, 0, 0.517);
+    position: fixed;
 }
 nav .logo{
     width: 20%;
@@ -66,13 +68,14 @@ nav ul li a:hover, nav ul li a.active{
     padding: 30px 35px;
 }
 .mainContent .headings{
-    padding: 80px 50px;
+    width: 50%;
+    padding: 125px 0px;
     font-family: 'Poppins', sans-serif;
 }
 .mainContent .headings h1{
     color: rgb(244, 235, 235);
-    padding-bottom: 50px;
-    font-size: 35px;
+    padding-bottom: 60px;
+    font-size: 40px;
     font-weight: 600;
     line-height: 2.1ch;
 }
@@ -82,8 +85,8 @@ nav ul li a:hover, nav ul li a.active{
 }
 .mainContent .headings p{
     color: rgba(224, 217, 217, 0.911);
-    padding-bottom: 50px;
-    font-size: 20px;
+    padding-bottom: 65px;
+    font-size: 27px;
     font-weight: 500;
     line-height: 2ch;
 }
@@ -93,53 +96,135 @@ nav ul li a:hover, nav ul li a.active{
     margin: 25px auto;
 }
 
-.mainContent .headings .contactBtn a{
+.mainContent .headings .contactBtn a, #projectLaunch .projectLaunchBottomSection .talkButton a{
     padding: 15px 40px;
     background-color: rgb(80, 111, 82);
     color: black;
     font-weight: 800;
-    font-size: 25px;
+    font-size: 28px;
     border-radius: 8px;
     text-align: center;
     margin-left: 50px;
 }
 .mainContent .homeImage{
-    width: 800px;
+    width: 65%;
     height: auto;
-    margin-right: 150px;
+    /* padding-top: 0; */
+    /* margin-right: 50px; */
 }
 .mainContent .homeImage img{
     width: 100%;
-    margin-bottom: 150px;
-    margin-right: 50px;
+    margin: 65px 0px;
 }
 /* Second Section Launch Project  */
 #projectLaunch{
     border-top: 1px solid white;
     width: 100vw;
-    height: 1000px;
-    background-image: url('../background/compressed/Excited.jpg');
+    height: 100%;
+    background-image: url('../Images/Background/Excited.webp');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+.launchHeading{
+    /* border: 1px solid red; */
+    padding: 65px 50px;
+    padding-bottom: 0px;
+}
+.launchHeading h1{
+    color: rgb(218, 186, 59);
+    font-size: 65px;
+
+}
+.launchHeading p{
+    font-size: 40px;
+    padding-top: 65px;
+    color: whitesmoke;
+}
+#projectLaunch .projectLaunchBottomSection{
+    display: flex;
+    justify-content: space-between;
+
+}
+#projectLaunch .projectLaunchBottomSection .talkButton{
+    width: 30%;
+    align-items: center;
+    padding: 215px 25px;
+}
+#projectLaunch .projectLaunchBottomSection .talkButton a{
+    align-items: center;
+    background-color: rgb(198, 152, 45);
+    margin-top: 250px;
+    font-size: 28px;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 125px;
+}
+#projectLaunch .projectLaunchBottomSection .projectImage{
+    width: 37%;
+    margin-right: 150px;
+}
+#projectLaunch .projectLaunchBottomSection .projectImage img{
+    width: 100%;
+    opacity: 0.8;
 }
 /* Our all services Section  */
 #services{
     border-top: 1px solid white;
     width: 100%;
-    height: 1000px;
-    background-image: url('../background/compressed/homeService.jpg');
+    height: 100%;
+    background-image: url('../Images/Background/homeService.webp');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    text-transform: capitalize;
 }
-
+.serviceHeading{
+    text-align: center;
+    padding: 50px 25px;
+    font-size: 35px ;
+    color: rgb(198, 152, 45);
+}
+.serviceContainer{
+    width: 85vw;
+    /* border: 1px solid red; */
+    margin: 25px auto;
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    text-align: center;
+    padding: 30px 35px;
+    
+}
+.serviceContainer .features{
+    /* border: 1px solid blue; */
+    width: 45%;
+    padding: 30px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+.serviceContainer .active{
+    /* border: 1px solid red; */
+    border-radius: 10px;
+    /* padding: 25px; */
+    background: linear-gradient(-135deg, rgb(40, 71, 51) 50%,  rgba(147, 147, 147, 0.499) 100%);
+}
+.serviceContainer .features h2{
+    color: rgb(198, 152, 45);
+    font-size: 30px;
+    /* padding-bottom: 20px; */
+}
+.serviceContainer .features p{
+    color: whitesmoke;
+    font-size: 28px;
+    /* padding-bottom: 20px; */
+    /* padding-left: 50px; */
+}
 /* Reviews  */
 #review{
     border-top: 1px solid white;
     width: 100%;
     height: 1200px;
-    background-image: url('../background/compressed/Review.jpg');
+    background-image: url('../Images/Background/Review.webp');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -150,7 +235,7 @@ nav ul li a:hover, nav ul li a.active{
     border-top: 1px solid white;
     width: 100%;
     height: 1500px;
-    background-image: url('../background/compressed/Query.jpg');
+    background-image: url('../Images/Background/Query.webp');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
