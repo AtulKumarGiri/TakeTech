@@ -9,6 +9,9 @@
     width: 100vw;
     height: auto;
 }
+
+
+
 /* First Screen Home Page area  */
 #home{
     width: 100vw;
@@ -26,6 +29,7 @@ nav{
     justify-content: space-between;
     background-color: rgba(0, 0, 0, 0.517);
     position: fixed;
+    z-index: 11111111;
 }
 nav .logo{
     width: 20%;
@@ -98,7 +102,7 @@ nav ul li a:hover, nav ul li a.active{
 
 .mainContent .headings .contactBtn a, #projectLaunch .projectLaunchBottomSection .talkButton a{
     padding: 15px 40px;
-    background-color: rgb(80, 111, 82);
+    background: #728E61;
     color: black;
     font-weight: 800;
     font-size: 28px;
@@ -109,13 +113,15 @@ nav ul li a:hover, nav ul li a.active{
 .mainContent .homeImage{
     width: 65%;
     height: auto;
-    /* padding-top: 0; */
-    /* margin-right: 50px; */
 }
 .mainContent .homeImage img{
     width: 100%;
     margin: 65px 0px;
 }
+
+
+
+
 /* Second Section Launch Project  */
 #projectLaunch{
     border-top: 1px solid white;
@@ -127,12 +133,11 @@ nav ul li a:hover, nav ul li a.active{
     background-size: cover;
 }
 .launchHeading{
-    /* border: 1px solid red; */
     padding: 65px 50px;
     padding-bottom: 0px;
 }
 .launchHeading h1{
-    color: rgb(218, 186, 59);
+    color: #E7B553;
     font-size: 65px;
 
 }
@@ -153,7 +158,7 @@ nav ul li a:hover, nav ul li a.active{
 }
 #projectLaunch .projectLaunchBottomSection .talkButton a{
     align-items: center;
-    background-color: rgb(198, 152, 45);
+    background-color:#E7B553;
     margin-top: 250px;
     font-size: 28px;
     font-family: 'Poppins', sans-serif;
@@ -167,6 +172,10 @@ nav ul li a:hover, nav ul li a.active{
     width: 100%;
     opacity: 0.8;
 }
+
+
+
+
 /* Our all services Section  */
 #services{
     border-top: 1px solid white;
@@ -182,43 +191,39 @@ nav ul li a:hover, nav ul li a.active{
     text-align: center;
     padding: 50px 25px;
     font-size: 35px ;
-    color: rgb(198, 152, 45);
+    color: #E7B553;
+    
 }
 .serviceContainer{
     width: 85vw;
-    /* border: 1px solid red; */
     margin: 25px auto;
     display: flex;
     justify-content: space-between;
-    /* flex-wrap: wrap; */
     text-align: center;
     padding: 30px 35px;
     
 }
 .serviceContainer .features{
-    /* border: 1px solid blue; */
     width: 45%;
     padding: 30px;
     font-family: 'Poppins', sans-serif;
     text-align: center;
 }
 .serviceContainer .active{
-    /* border: 1px solid red; */
     border-radius: 10px;
-    /* padding: 25px; */
     background: linear-gradient(-135deg, rgb(40, 71, 51) 50%,  rgba(147, 147, 147, 0.499) 100%);
 }
 .serviceContainer .features h2{
-    color: rgb(198, 152, 45);
+    color: #E7B553;
     font-size: 30px;
-    /* padding-bottom: 20px; */
 }
 .serviceContainer .features p{
     color: whitesmoke;
     font-size: 28px;
-    /* padding-bottom: 20px; */
-    /* padding-left: 50px; */
 }
+
+
+
 /* Reviews  */
 #review{
     border-top: 1px solid white;
@@ -229,6 +234,10 @@ nav ul li a:hover, nav ul li a.active{
     background-position: center;
     background-size: cover;
 }
+
+
+
+
 /* Query Section  */
 
 #query{
@@ -243,28 +252,24 @@ nav ul li a:hover, nav ul li a.active{
     color: white;
 }
 #query .queryHeading{
- /* border: 1px solid red; */
- padding: 50px 0px;
- margin: 25px 0px;
+ padding: 35px 0px;
+ margin: 35px 0px;
  text-align: center;
 }
 #query .queryHeading h1{
     color: #fff;
-    font-size: 65px;
+    font-size: 60px;
 }
 #query .queryHeading h1 span{
-    color: rgb(218, 186, 59);
+    color: #E7B553;
 }
 
 form{
-    /* border: 1px solid red; */
     width: 50%;
-    margin: 0 auto;
-    padding: 60px;
+    margin: 35px auto;
     text-align: center;
 }
 .elements{
-    /* border: 1px solid blue; */
     margin: 10px 0px;
     width: 100%;
     font-size: 23px;
@@ -272,13 +277,11 @@ form{
     text-align: left;
 }
 .doubleElements{
-    /* border: 1px solid black; */
     display: flex;
     justify-content: space-between;
 }
 .firstElement,.secondElement{
     width: 48%;
-    /* border: 1px solid red; */
 }
 .elements input{
     font-size: 23px;
@@ -327,43 +330,127 @@ form button{
     border-radius: 8px;
     background-color: rgb(193, 188, 188);
     color: rgb(19, 76, 57);
+    cursor: pointer;
 }
+
+
+
+
+/* Query Lower Section  */
 .contactSection{
-    border: 1px solid red;
     width: 100vw;
     height: 100%;
     display: flex;
     justify-content: space-between;
+    margin-top: 200px;
+    z-index: 0;
 }
-.leftContactArea, .rightContactArea{
-    border: 1px solid blue;
-    width: 48%;
+
+.leftContactArea{
+    width: 50%;
+}
+.leftContactArea .logo{
+    width: 100%;
+}
+.leftContactArea .logo img{
+    width: 42%;
+    height: auto;
+}
+.leftContactArea .centerText{
+    width: 65%;
+    margin: 0px auto;
+    padding: 15px 0px;
+    font-size: 20px;
+    font-weight: 600;
 }
 .policyTerms{
-    border: 1px solid white;
+    width: 80%;
     display: flex;
-    justify-content: space-between;
+    justify-content: right;
+    margin: 70px 0px;
 }
-.companyProfile, .terms{
-    width: 48%;
-    border: 1px solid black;
-    height: 40px;
+
+
+.companyProfile a, .terms a{
+    display: block;
+    color: #E7B553;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 2px 0px;
 }
+.companyProfile a{
+    padding-right:180px;
+}
+
+.rightContactArea{
+    width: 50%;
+}
+.rightContactArea .time, .rightContactArea .phone, .rightContactArea .mail, .rightContactArea .socialLinks{
+    display: flex;
+    width: 100%;
+    height: 125px;
+    justify-content: right;
+    color: black;
+    font-size: 23px;
+    font-weight: 900;
+    align-items: center;
+    padding-right: 150px;
+}
+ .rightContactArea .boxAreas, .rightContactArea .socialLinks a img{
+    padding-right: 50px;
+}
+.rightContactArea .logo img{
+    width: 80px;
+    padding: 15px;
+}
+.rightContactArea .time{
+    background: #E9BB60;
+    clip-path: polygon(
+        0% 20px,
+        20px 0%,                 
+        calc(100% - 00px) 0%,    
+        100% 0px,               
+        100% calc(100% - 0px),  
+        calc(100% - 0px) 100%,  
+        0px 100%,               
+        0 calc(100% - 0px)
+    );
+}
+
+.rightContactArea .phone{
+    background: #2A3E31F0;
+
+}
+.rightContactArea .phone .boxAreas p{
+    padding-right: 80px;
+}
+.rightContactArea .mail{
+    background: #2A3E31;
+}
+.rightContactArea .mail a{
+    color: black;
+}
+
+.rightContactArea .socialLinks{
+    background: #88A275;
+    /* border: 1px solid white; */
+    padding: 20px 0px;
+    display: flex;
+}
+.rightContactArea .socialLinks .links {
+    padding-right: 250px;
+    
+}
+
+
 
 /* Footer Area  */
 footer{
     bottom: 0%;
     width: 100vw;
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     background-color: black;
     color: white;
     padding: 10px 0px;
-}
-.line{
-    bottom: 0px;
-    width: 100vw;
-    height: 3px;
-    background-color: rgb(19, 76, 57);
-
 }
